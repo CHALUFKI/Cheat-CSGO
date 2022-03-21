@@ -1,8 +1,0 @@
-﻿G:\Visual Studio\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: Katalog pośredni (.\output\intermediates\) zawiera pliki udostępnione z innego projektu (pro-bhop.vcxproj). Może to spowodować niepoprawne zachowanie podczas oczyszczania i ponownej kompilacji.
-  main.cpp
-  Trwa generowanie kodu
-  0 of 76 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
-  Zakończono generowanie kodu
-  BFP_bhop.vcxproj -> C:\Users\Adrian\Documents\GitHub\BFP_bhop\output\BFP bhop.exe
