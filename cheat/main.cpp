@@ -38,7 +38,6 @@ int main()
 
 	const auto client = mem.GetModuleAddress("client.dll");
 	std::cout << std::endl << "Jesli pisze 0x0 - odpal csgo" << std::endl;
-	std::cout << "Proces CSGO:" << std::endl;
 	std::cout << "client.dll -> " << "0x" << std::hex << client << std::dec << std::endl;
 
 	constexpr const auto color = Color{ 1.f, 0.f, 1.f };
