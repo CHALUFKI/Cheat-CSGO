@@ -1,2 +1,2 @@
-﻿# csgo cheat - bhop
-prosty cheat do gry csgo - bhop
+﻿# csgo cheat - bhop & glow
+prosty cheat do gry csgo - bhop & glow
