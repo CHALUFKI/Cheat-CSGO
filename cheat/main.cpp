@@ -3,7 +3,7 @@
 #include <thread>
 #include <iostream>
 
-// dzieki za offsety frk1
+// update 24.03.2022
 // https://github.com/frk1/hazedumper/blob/master/csgo.hpp
 namespace offsets
 {
@@ -29,9 +29,13 @@ int main()
 {
 	const auto mem = Memory("csgo.exe");
 
+	HWND consoleWindow = GetConsoleWindow();
+	SetWindowLong(consoleWindow, GWL_STYLE, GetWindowLong(consoleWindow, GWL_STYLE) & ~WS_MAXIMIZEBOX & ~WS_SIZEBOX);
 	system("Color 0D");
-	SetConsoleTitle("BFP_bhop ");
+	SetConsoleTitle("BFP_bhop (update 24.03.2022)");
 	std::cout << "BFProject v1.1" << std::endl;
+	std::cout << "Data wydania: " << __DATE__ << " " << __TIME__ << std::endl;
+	std::cout << "Offsets update: 24.03.2022" << std::endl;
 	std::cout << "Najpierw odpal gre!" << std::endl;
 	std::cout << "Cheat automatycznie sie zainjectuje!" << std::endl;
 
@@ -39,6 +43,8 @@ int main()
 	const auto client = mem.GetModuleAddress("client.dll");
 	std::cout << std::endl << "Jesli pisze 0x0 - odpal csgo" << std::endl;
 	std::cout << "client.dll -> " << "0x" << std::hex << client << std::dec << std::endl;
+
+	//system("cls");
 
 	constexpr const auto color = Color{ 1.f, 0.f, 1.f };
 
