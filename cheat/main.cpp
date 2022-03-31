@@ -3,15 +3,15 @@
 #include <thread>
 #include <iostream>
 
-// update 24.03.2022
+// update 30.03.2022
 // https://github.com/frk1/hazedumper/blob/master/csgo.hpp
 namespace offsets
 {
-	constexpr auto localPlayer = 0xDB35DC;
+	constexpr auto localPlayer = 0xDB65DC;
 	constexpr auto flags = 0x104;
-	constexpr auto forceJump = 0x5278DDC;
-	constexpr auto entityList = 0x4DCEEAC;
-	constexpr auto glowObjectManager = 0x5317308;
+	constexpr auto forceJump = 0x527C38C;
+	constexpr auto entityList = 0x4DD245C;
+	constexpr auto glowObjectManager = 0x531B048;
 	constexpr auto teamNum = 0xF4;
 	constexpr auto glowIndex = 0x10488;
 }
@@ -32,17 +32,16 @@ int main()
 	HWND consoleWindow = GetConsoleWindow();
 	SetWindowLong(consoleWindow, GWL_STYLE, GetWindowLong(consoleWindow, GWL_STYLE) & ~WS_MAXIMIZEBOX & ~WS_SIZEBOX);
 	system("Color 0D");
-	SetConsoleTitle("BFP_bhop (update 24.03.2022)");
-	std::cout << "BFProject v1.1" << std::endl;
-	std::cout << "Data wydania: " << __DATE__ << " " << __TIME__ << std::endl;
-	std::cout << "Offsets update: 24.03.2022" << std::endl;
-	std::cout << "Najpierw odpal gre!" << std::endl;
-	std::cout << "Cheat automatycznie sie zainjectuje!" << std::endl;
+	SetConsoleTitle("BFP_bhop (update " __DATE__ " )");
+	std::cout << "BFProject v0.1" << std::endl;
+	std::cout << "Release date: " << __DATE__ << " " << __TIME__ << std::endl;
+	std::cout << "Offsets update: 30.03.2022" << std::endl;
+	//std::cout << "Najpierw odpal gre!" << std::endl;
 
 
 	const auto client = mem.GetModuleAddress("client.dll");
-	std::cout << std::endl << "Jesli pisze 0x0 - odpal csgo" << std::endl;
-	std::cout << "client.dll -> " << "0x" << std::hex << client << std::dec << std::endl;
+	//std::cout << std::endl << "Jesli pisze 0x0 - odpal csgo" << std::endl;
+	std::cout << std::endl << "client.dll -> " << "0x" << std::hex << client << std::dec << std::endl;
 
 	//system("cls");
 
