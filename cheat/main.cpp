@@ -3,15 +3,15 @@
 #include <thread>
 #include <iostream>
 
-// update 30.03.2022
+// update 01.04.2022
 // https://github.com/frk1/hazedumper/blob/master/csgo.hpp
 namespace offsets
 {
-	constexpr auto localPlayer = 0xDB65DC;
+	constexpr auto localPlayer = 0xDB35DC;
 	constexpr auto flags = 0x104;
-	constexpr auto forceJump = 0x527C38C;
-	constexpr auto entityList = 0x4DD245C;
-	constexpr auto glowObjectManager = 0x531B048;
+	constexpr auto forceJump = 0x5278DDC;
+	constexpr auto entityList = 0x4DCEEAC;
+	constexpr auto glowObjectManager = 0x5317308;
 	constexpr auto teamNum = 0xF4;
 	constexpr auto glowIndex = 0x10488;
 }
@@ -35,7 +35,7 @@ int main()
 	SetConsoleTitle("BFP_bhop (update " __DATE__ " )");
 	std::cout << "BFProject v0.1" << std::endl;
 	std::cout << "Release date: " << __DATE__ << " " << __TIME__ << std::endl;
-	std::cout << "Offsets update: 30.03.2022" << std::endl;
+	std::cout << "Offsets update: 01.04.2022" << std::endl;
 	//std::cout << "Najpierw odpal gre!" << std::endl;
 
 
