@@ -32,8 +32,8 @@ int main()
 	HWND consoleWindow = GetConsoleWindow();
 	SetWindowLong(consoleWindow, GWL_STYLE, GetWindowLong(consoleWindow, GWL_STYLE) & ~WS_MAXIMIZEBOX & ~WS_SIZEBOX);
 	system("Color 0D");
-	SetConsoleTitle("BFP_bhop (update " __DATE__ " )");
-	std::cout << "BFProject v0.1" << std::endl;
+	SetConsoleTitle("Cheat (update " __DATE__ " )");
+	std::cout << "Cheat v0.1" << std::endl;
 	std::cout << "Release date: " << __DATE__ << " " << __TIME__ << std::endl;
 	std::cout << "Offsets update: 01.04.2022" << std::endl;
 	//std::cout << "Najpierw odpal gre!" << std::endl;
